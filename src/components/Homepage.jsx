@@ -55,7 +55,9 @@ export default function Homepage() {
           <div className="hero-content">
             <p className="hero-eyebrow">Velkommen tilbage</p>
             <h1>Benjamin</h1>
-            <p className="hero-sub">Se populære aktiviteter og events nær dig</p>
+            <p className="hero-sub">
+              Se populære aktiviteter og events nær dig
+            </p>
             <button className="hero-cta">Udforsk events</button>
           </div>
         </div>
