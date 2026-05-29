@@ -1,4 +1,13 @@
 {
+  "name": "lynk-web-app-eksamensopgave",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "@supabase/supabase-js": "^2.106.2",
     "react": "^19.2.6",

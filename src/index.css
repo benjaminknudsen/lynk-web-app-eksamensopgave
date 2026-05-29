@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 :root {
   --bg: #0b1116;
@@ -13,8 +13,8 @@
   --outline: rgba(216, 239, 255, 0.18);
   --shadow: 0 20px 50px rgba(5, 9, 12, 0.55);
 
-  --font-sans: "Manrope", "Segoe UI", sans-serif;
-  --font-display: "Space Grotesk", "Segoe UI", sans-serif;
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+  --font-display: "Inter", "Segoe UI", sans-serif;
 
   font: 16px/1.5 var(--font-sans);
   letter-spacing: 0.2px;
