@@ -1,4 +1,8 @@
-import { useNavigate } from "react-router-dom";
+import logo from "../assets/Frame 125.svg";
+import soccerIcon from "../assets/soccer.svg";
+import runIcon from "../assets/tabler_run.svg";
+import padelIcon from "../assets/Vector.svg";
+import basketballIcon from "../assets/carbon_basketball.svg";
 import "./Homepage.css";
 
 export default function Homepage() {
@@ -8,7 +12,7 @@ export default function Homepage() {
     <div className="homepage">
       <header className="topbar">
         <div className="brand">
-          <span className="brand-mark">L</span>
+          <img className="brand-logo" src={logo} alt="Lynk logo" />
           <span className="brand-name">Lynk</span>
         </div>
         <div className="top-actions">
@@ -40,7 +44,7 @@ export default function Homepage() {
       </header>
 
       <div className="search-row">
-        <label className="search" aria-label="Soeg efter events">
+        <label className="search" aria-label="Søg efter events">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path
               d="M11 4a7 7 0 1 0 4.3 12.6l3.6 3.6 1.4-1.4-3.6-3.6A7 7 0 0 0 11 4z"
@@ -49,7 +53,7 @@ export default function Homepage() {
               strokeWidth="1.6"
             />
           </svg>
-          <input type="text" placeholder="Soeg efter events..." />
+          <input type="text" placeholder="Søg efter events..." />
         </label>
       </div>
 
@@ -60,7 +64,7 @@ export default function Homepage() {
             <p className="hero-eyebrow">Velkommen tilbage</p>
             <h1>Benjamin</h1>
             <p className="hero-sub">
-              Se populaere aktiviteter og events naer dig
+              Se populære aktiviteter og events nær dig
             </p>
             <button className="hero-cta">Udforsk events</button>
           </div>
@@ -75,72 +79,25 @@ export default function Homepage() {
         <div className="category-row">
           <button className="category-card">
             <span className="category-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <circle
-                  cx="12"
-                  cy="12"
-                  r="7"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.6"
-                />
-                <path d="M8 8l8 8" stroke="currentColor" strokeWidth="1.3" />
-                <path d="M16 8l-8 8" stroke="currentColor" strokeWidth="1.3" />
-              </svg>
+              <img src={soccerIcon} alt="Fodbold" />
             </span>
             Fodbold
           </button>
           <button className="category-card">
             <span className="category-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M6 18l6-12 6 12"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.6"
-                  strokeLinecap="round"
-                />
-                <path d="M8 14h8" stroke="currentColor" strokeWidth="1.4" />
-              </svg>
+              <img src={runIcon} alt="Løb" />
             </span>
-            Loeb
+            Løb
           </button>
           <button className="category-card">
             <span className="category-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <rect
-                  x="5"
-                  y="6"
-                  width="14"
-                  height="12"
-                  rx="2"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.6"
-                />
-                <path d="M12 6v12" stroke="currentColor" strokeWidth="1.2" />
-              </svg>
+              <img src={padelIcon} alt="Padel" />
             </span>
             Padel
           </button>
           <button className="category-card">
             <span className="category-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <circle
-                  cx="12"
-                  cy="12"
-                  r="7"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.6"
-                />
-                <path d="M5 12h14" stroke="currentColor" strokeWidth="1.2" />
-                <path
-                  d="M12 5a7 7 0 0 1 0 14"
-                  stroke="currentColor"
-                  strokeWidth="1.2"
-                />
-              </svg>
+              <img src={basketballIcon} alt="Basketball" />
             </span>
             Basket
           </button>
@@ -149,7 +106,7 @@ export default function Homepage() {
 
       <section className="section reveal delay-2">
         <div className="section-head">
-          <h2>Naerliggende events</h2>
+          <h2>Nærliggende events</h2>
           <button className="ghost-link">Se alle</button>
         </div>
         <div className="event-row">
@@ -158,10 +115,10 @@ export default function Homepage() {
               <span className="media-chip">4 / 10</span>
             </div>
             <div className="event-body">
-              <h3>Loebetur - 10 km</h3>
+              <h3>Løbetur - 10 km</h3>
               <p>Aarhus</p>
-              <p className="muted">Man 26 Maj • 18:30</p>
-              <span className="tag">Loeb</span>
+              <p className="muted">Man 26. maj • 18:30</p>
+              <span className="tag">Løb</span>
             </div>
           </article>
           <article className="event-card">
@@ -171,7 +128,7 @@ export default function Homepage() {
             <div className="event-body">
               <h3>Fodboldhygge</h3>
               <p>Aarhus</p>
-              <p className="muted">Loer 24 Maj • 13:00</p>
+              <p className="muted">Lør 24. maj • 13:00</p>
               <span className="tag">Fodbold</span>
             </div>
           </article>
@@ -182,7 +139,7 @@ export default function Homepage() {
             <div className="event-body">
               <h3>Padel for alle</h3>
               <p>Aarhus</p>
-              <p className="muted">Ons 28 Maj • 17:45</p>
+              <p className="muted">Ons 28. maj • 17:45</p>
               <span className="tag">Padel</span>
             </div>
           </article>
@@ -191,7 +148,7 @@ export default function Homepage() {
 
       <section className="section reveal delay-3">
         <div className="section-head">
-          <h2>Saadan virker det</h2>
+          <h2>Sådan virker det</h2>
         </div>
         <div className="steps">
           <article className="step">
@@ -202,12 +159,12 @@ export default function Homepage() {
           <article className="step">
             <span className="step-index">2</span>
             <h3>Join</h3>
-            <p>Tilmed dig og moed nye mennesker</p>
+            <p>Tilmeld dig og mød nye mennesker</p>
           </article>
           <article className="step">
             <span className="step-index">3</span>
-            <h3>Vaer med</h3>
-            <p>Deltag og bliv en del af faellesskabet</p>
+            <h3>Vær med</h3>
+            <p>Deltag og bliv en del af fællesskabet</p>
           </article>
         </div>
       </section>
@@ -227,7 +184,7 @@ export default function Homepage() {
           </article>
           <article className="stat-card">
             <p className="stat-value">4.9 / 5</p>
-            <p className="stat-label">Gennemsnitlige bedommelse</p>
+            <p className="stat-label">Gennemsnitlige bedømmelse</p>
           </article>
         </div>
         <div className="quote-card">
@@ -247,7 +204,7 @@ export default function Homepage() {
 
       <section className="section reveal delay-5">
         <div className="section-head">
-          <h2>Populaert lige nu</h2>
+          <h2>Populært lige nu</h2>
           <button className="ghost-link">Se alle</button>
         </div>
         <div className="event-row">
@@ -258,7 +215,7 @@ export default function Homepage() {
             <div className="event-body">
               <h3>Morning Run</h3>
               <p>Aarhus</p>
-              <p className="muted">Loeb</p>
+              <p className="muted">Løb</p>
             </div>
           </article>
           <article className="event-card">
@@ -266,7 +223,7 @@ export default function Homepage() {
               <span className="media-chip">11v11</span>
             </div>
             <div className="event-body">
-              <h3>Fodbold pa kunst</h3>
+              <h3>Fodbold på kunst</h3>
               <p>Aarhus</p>
               <p className="muted">Fodbold</p>
             </div>
@@ -285,11 +242,91 @@ export default function Homepage() {
       </section>
 
       <nav className="bottom-nav" aria-label="Bundmenu">
-        <button className="nav-item active">Udforsk</button>
-        <button className="nav-item">Mine events</button>
-        <button className="nav-item fab">Opret</button>
-        <button className="nav-item">Beskeder</button>
-        <button className="nav-item">Profil</button>
+        <button className="nav-item active">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle
+              cx="12"
+              cy="12"
+              r="8"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.64"
+            />
+            <path
+              d="M12 7v5l3 3"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.64"
+              strokeLinecap="round"
+            />
+          </svg>
+          <span className="nav-label">Udforsk</span>
+        </button>
+        <button className="nav-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect
+              x="4"
+              y="6"
+              width="16"
+              height="12"
+              rx="2"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.64"
+            />
+            <path
+              d="M8 4v4M16 4v4"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.64"
+              strokeLinecap="round"
+            />
+          </svg>
+          <span className="nav-label">Mine events</span>
+        </button>
+        <button className="nav-item fab" aria-label="Opret event">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 6v12M6 12h12"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.64"
+              strokeLinecap="round"
+            />
+          </svg>
+        </button>
+        <button className="nav-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M5 6h14a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H10l-5 4v-4H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.64"
+              strokeLinejoin="round"
+            />
+          </svg>
+          <span className="nav-label">Beskeder</span>
+        </button>
+        <button className="nav-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle
+              cx="12"
+              cy="9"
+              r="3.5"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.64"
+            />
+            <path
+              d="M5 19c1.8-3 11.2-3 14 0"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.64"
+              strokeLinecap="round"
+            />
+          </svg>
+          <span className="nav-label">Profil</span>
+        </button>
       </nav>
     </div>
   );
