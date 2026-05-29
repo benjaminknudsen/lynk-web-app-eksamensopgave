@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import "./Homepage.css";
 
 export default function Homepage() {
+  const navigate = useNavigate();
+
   return (
     <div className="homepage">
       <header className="topbar">
@@ -26,7 +29,13 @@ export default function Homepage() {
               />
             </svg>
           </button>
-          <div className="avatar">B</div>
+          <button
+            className="avatar"
+            onClick={() => navigate("/profile")}
+            aria-label="Go to profile"
+          >
+            B
+          </button>
         </div>
       </header>
 
